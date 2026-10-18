@@ -2,6 +2,16 @@
 
 This is assuming your machine is on Windows.
 
+
+## Cloning models
+
+We need to grab the models from Hugging Face. The models are added as submodules. To pull them initially:
+
+```
+git submodule update --init --recursive
+```
+
+
 ## Creating .venv
 We need to create a virtual environment so that we don't pollute your global python packages. Just run the following:
 
@@ -26,16 +36,6 @@ pip install -r requirements\cuda-enabled.txt
 ```
 
 This took forever on my end so I guess you can stand up and do something else.
-
-## Cloning models
-
-We need to grab the models from Hugging Face. To do so:
-
-```
-cd .models
-git clone https://huggingface.co/paolomanlapaz/rispice-base
-git clone https://huggingface.co/paolomanlapaz/rispice-1000bp
-```
 
 ## Running pipeline
 
