@@ -44,3 +44,11 @@ I kept the project structure of the original repo, only keeping the important st
 ```bash
 python -m scripts.predict.batch_test -m .models\rispice-base -l .models\rispice-1000bp -i .data\hak1\sequences.tsv -o .data\hak1\ --cuda
 ```
+
+Hopefully, this just runs as is. CUDA only works with nvidia chips, daw. If it fails, try running:
+
+```bash
+python -m scripts.predict.batch_test -m .models\rispice-base -l .models\rispice-1000bp -i .data\hak1\sequences.tsv -o .data\hak1\
+```
+
+this runs the model without cuda enabled (as in, CPU only). Even if you installed `cuda-enabled.txt`, this should still work. If this still didn't, some setup didn't go right. Maybe I can help with the debugging, but I'm sure an AI can read an error message better.
