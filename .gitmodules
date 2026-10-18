@@ -1,0 +1,6 @@
+[submodule ".models/rispice-1000bp"]
+	path = .models/rispice-1000bp
+	url = https://huggingface.co/paolomanlapaz/rispice-1000bp
+[submodule ".models/rispice-base"]
+	path = .models/rispice-base
+	url = https://huggingface.co/paolomanlapaz/rispice-base
